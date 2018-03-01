@@ -1,11 +1,11 @@
 #####################################
 
 
-# 1. Execute cada um desses comandos no R e explique o que cada um faz num comentário.
+# 1. Execute cada um desses comandos no R e explique o que cada um faz num comentÃ¡rio.
 
 7 * 9 #multiplicacao
 4 + 4 #soma
-x <- 3 - 10 #subtra��o 
+x <- 3 - 10 #subtração 
 y = x + 8 #soma 
 20 %% 3 #porcentagem 
 sqrt(256) #raiz quadrada
@@ -29,7 +29,7 @@ class(nomes)
 class(idades)
 
 # 4. Use um comando para juntar esses dois vetores como colunas 
-# e criar um data.frame Verifique as dimensões do seu banco de dados.
+# e criar um data.frame Verifique as dimensÃµes do seu banco de dados.
 
 dados <- data.frame(nomes , idades)
 
