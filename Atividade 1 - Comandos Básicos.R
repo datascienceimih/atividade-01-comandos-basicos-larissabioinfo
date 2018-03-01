@@ -11,7 +11,7 @@ y = x + 8 #soma
 sqrt(256) #raiz quadrada
 45^2 #raiz quadrada 
 968^(1/3) #raiz cubica
-exp(6)/log(156) #exponencial #log 
+exp(6)/log(156) #exponencial #log # E faz a divisão entre os dois!
 
 
 #######################################################################
@@ -38,11 +38,13 @@ dados <- data.frame(nomes , idades)
 
 ##  [1]  1  2  3  4  5  6  7  8  9 10
 
-c(1,2,3,4,5,6,7,8,9,10)
+c(1,2,3,4,5,6,7,8,9,10) #Isso funciona bem. Se quiser economizar algumas tecladas, use os comandos de sequência:
+1:10
 
 ##  [1]  2  4  6  8 10 12 14 16 18 20
 
 c(2,4,6,8,10,12,14,16,18,20)
+seq(from = 2, to = 20, by = 2)
 
 ##  [1] 1.0 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2.0 2.1 2.2 2.3 2.4 2.5 2.6
 ## [18] 2.7 2.8 2.9 3.0 3.1 3.2 3.3 3.4 3.5 3.6 3.7 3.8 3.9 4.0 4.1 4.2 4.3
@@ -52,14 +54,17 @@ c(1.0 ,  1.1 ,  1.2 ,  1.3 ,  1.4 ,  1.5 ,  1.6  , 1.7  , 1.8 , 1.9 ,  2.0 ,  2.
   2.2 ,  2.3 ,  2.4 ,  2.5 ,  2.6 , 2.7 ,  2.8 ,  2.9  , 3.0 , 3.1 ,  3.2 ,  3.3  , 3.4  , 
   3.5 , 3.6 ,  3.7 ,  3.8 , 3.9  , 4.0 ,  4.1 ,  4.2  , 4.3 , 4.4 ,  4.5 ,  4.6 , 4.7 , 
   4.8  , 4.9  , 5.0 )
+seq(from = 1, to = 5, by = 0.1)
 
 ## [1] 1 2 3 1 2 3 1 2 3
 
-c (1 , 2 , 3 , 1 , 2 , 3 , 1 , 2 , 3 )
+c (1 , 2 , 3 , 1 , 2 , 3 , 1 , 2 , 3 )  #Também para economizar alguns dedinhos:
+rep(1:3, times = 3)
 
 ##  [1] 1 1 1 1 1 2 2 2 2 2 3 3 3 3 3
 
 c (1 , 1 , 1 , 1 , 1 , 2 , 2 , 2 , 2 , 2 ,3 , 3 , 3 , 3)
+rep(1:3, each = 5)
 
 
 # 6. Com apenas um comando, crie cada uma das seguintes matrizes:
@@ -101,7 +106,8 @@ matrix(data = 1:40, nrow = 10, ncol = 4, byrow = T)
 ## [3,]   48  112  176  240
 ## [4,]   64  128  192  256
 
-matrix(data =  )
-
+# Esse era chatinho né? A solução é esta aqui:
+matrix(data =  seq(from = 16, to = 256, by = 16), ncol = 4, nrow = 4)
+# O Legal é tentar encontrar a "lógica" da matriz.
 
 
